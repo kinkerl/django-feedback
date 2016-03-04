@@ -21,6 +21,7 @@ feedback.init = function(config) {
         config.drop.removeClass('hiding');
         config.popup.removeClass('hiding');
         config.popup.find('input[name=email]').focus();
+        return false;
     });
     config.popup.find('.close').click(feedback.closeit(config, false));
     config.drop.click(feedback.closeit(config, false));
